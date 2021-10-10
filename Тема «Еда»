@@ -1,0 +1,27 @@
+<html> 
+  <head> 
+    <title>Эко продукция</title> 
+  </head> 
+  <body> 
+    <script> 
+      let products = { 
+      chocolate: "Черный шоколад 95% / Состав: какао тертое, какао масло, сироп из агавы / Украина", 
+      crispbread: "На данный момент данного товара нет в наличии", 
+      tea: "Чай Meal Time асорти 24х60 г / (имбирь с медом и лаймом)", 
+      avocado: "На данный момент данного товара нет в наличии", 
+      milk: "Молоко пастеризованное 2,5% / Молоко отличается превосходным качеством, натуральностью и насыщенным вкусом" 
+      }; 
+let productcheck = prompt("Введите название продукта, чтобы проверить его наличие"); 
+      do { 
+      if (productcheck == "Шоколад") {alert(products.chocolate);} 
+      else if (productcheck == "Хлебцы") {alert(products.crispbread);} 
+      else if (productcheck == "Чай") {alert(products.tea);} 
+      else if (productcheck == "Авокадо") {alert(products.avocado);} 
+      else if (productcheck == "Молоко") {alert(products.milk);} 
+ else if (productcheck != "Хлебцы" || "Чай" || "Авокадо" || "Молоко"){alert("Вы допустили ошибку в названии товара, либо он отсутствует")}; 
+if(productcheck != "Хлебцы" || "Чай" || "Авокадо" || "Молоко") {productcheck = prompt("Введите название продукта, чтобы проверить его наличие")} } 
+ while (productcheck != "Чай" || "Молоко" || "Шоколад"); 
+ 
+      </script> 
+    </body> 
+</html>
